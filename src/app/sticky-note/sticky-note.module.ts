@@ -14,6 +14,7 @@ import { AlbumFormComponent } from 'src/app/album-form/album-form.component';
 import { AlbumListComponent } from 'src/app/album-list/album-list.component';
 import { ViewAlbumDetailsComponent } from './view-album-details/view-album-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CapitalizePipe } from 'src/app/capitalize.pipe';
 
 const appNavigations : Routes = [
   {path:"",component:AddNewNoteButtonComponent},
@@ -29,9 +30,10 @@ const appNavigations : Routes = [
     CommonModule,
     HttpClientModule,
     RouterModule.forRoot(appNavigations),
-    FormsModule
+    FormsModule,
+
   ],
-  declarations: [NoteComponent, StickBoardComponent,HeaderComponent, AddNewNoteButtonComponent, ForkComponent, ChangeViewComponent, LogInComponent, SignUpComponent, AlbumFormComponent,AlbumListComponent, ViewAlbumDetailsComponent],
+  declarations: [NoteComponent, StickBoardComponent,HeaderComponent, AddNewNoteButtonComponent, ForkComponent, ChangeViewComponent, LogInComponent, SignUpComponent, AlbumFormComponent,AlbumListComponent, ViewAlbumDetailsComponent,CapitalizePipe],
   exports:[StickBoardComponent,
           NoteComponent,
           HeaderComponent,

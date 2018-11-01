@@ -10,8 +10,7 @@ import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CapitalizePipe
+    AppComponent
     
    
    

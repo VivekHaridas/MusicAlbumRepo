@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CapitalizePipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: any, args?: any,b?:any): any {
+    console.log("*** ",args,b)
+    return "Hello saran";
   }
 
 }
