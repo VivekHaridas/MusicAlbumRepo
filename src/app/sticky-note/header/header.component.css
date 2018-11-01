@@ -4,7 +4,9 @@ background:linear-gradient(135deg, white 0%, #ebebeb 47%, #dedede 100%);}
 .header{
   background-color:black;
   height:69px;
-  border-bottom: 5px solid #36383F;}
+  border-bottom: 5px solid #36383F;
+  float:left;
+  width:100%;}
   
 .header-logo{
   width:50px;
