@@ -1,0 +1,52 @@
+.note{
+    background-color:yellow;
+    width:39%;
+    height:350px;
+    float:left;
+    margin-top: 100px;
+    margin-left: 15px;
+    
+    }
+.note.red{
+    background-color:rgb(238, 135, 135);
+
+   } 
+.note.green{
+    background-color:rgb(159, 223, 159);
+   }
+.note.blue{
+        background-color:rgb(166, 166, 243);
+    }
+.note.grey{
+    background-color:rgb(167, 156, 156);
+   }
+
+    .delete-note-button{
+    float:right;
+    width: 40px;
+    height:40px;
+    }
+    .delete-note-button:hover{
+    cursor:pointer;
+    }
+
+    .note-title{
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    font-family: "Gloria Hallelujah", cursive;
+    width: 90%;
+    padding: 5px;
+    font-size: 24px;
+    height: 64px;
+    }
+    
+    .note-description{
+    background-color: transparent;
+    border: none;
+    font-family: "Gloria Hallelujah", cursive;
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+    height: 200px;} 
+    

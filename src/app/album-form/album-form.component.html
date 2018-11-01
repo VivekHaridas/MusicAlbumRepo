@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Music Album Registration</h1>
+  <form #musicAlbumForm="ngForm">
+    <div class="form-group">
+      <label for="track">Track</label>
+      <input type="text" class="form-control" id="track" required [(ngModel)]="record.track" name="track">
+    </div> 
+
+    <div class="form-group">
+      <label for="artist">Artist</label>
+      <select type="text" class="form-control" id="artist"required [(ngModel)]="record.artist" name="artist">
+        <option value="">---Select artist---</option> 
+        <option *ngFor="let item of artists">{{item}}</option>
+      </select>
+
+      
+    </div> 
+
+    <div class="form-group">
+      <label for="album">Album</label>
+      <input type="text" class="form-control" id="album" required [(ngModel)]="record.album" name="album">
+    </div> 
+
+    <div class="form-group">
+      <label for="release-notes">Release Notes</label>
+      <input type="text" class="form-control" id="release-notes" [(ngModel)]="record.releaseNotes" name="release-notes">
+    </div>
+    <button type="submit" class="btn btn-success" (click)=addRecord()>Submit</button>
+  </form>
+</div>

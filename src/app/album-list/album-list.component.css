@@ -1,0 +1,47 @@
+table,th,td{
+    border:2px solid green;
+    background-color: aquamarine;
+}
+
+
+
+
+.table-container{
+    margin-top:5px;
+}
+.table-style{
+   
+     margin-left:15px;
+   
+}
+
+.list-display{
+    float:left;
+    font-size:15px;
+    padding:15px;
+    width: 300px;
+
+}
+.list-delete-button{
+    background-color:red;
+    border-radius: 20px;
+    float:right;
+    color:white;
+}
+.view-details-button{
+    background-color: blueviolet;
+    float:right;
+    color:white;
+    margin-top:30px;
+    
+
+}
+.link{
+    color:white;
+    text-decoration:none;
+  }
+  .link-active{
+    text-decoration:underline;
+    color:yellowgreen;
+  }
+  

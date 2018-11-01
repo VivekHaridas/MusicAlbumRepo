@@ -1,0 +1,3 @@
+<div class="button-add-new-note" (click)="addNewNote()" >Add New Note </div>
+<app-note  *ngFor="let item of noteCollection" [label]="item.deletionId"  [colorLabel]="item.color" (noteDeleteButtonClick)="deleteStickyNote($event)"></app-note>
+

@@ -1,0 +1,14 @@
+.button-add-new-note{
+    position: fixed; 
+    top: 100px;
+    right:20px;
+    background-color:#00CC00;
+    color:white;
+    border-radius:3px;
+    padding:15px;
+    font:bold 16px Helvetica, Arial, sans-serif; }
+    
+  .button-add-new-note:hover{
+  cursor:pointer;
+  background-color:#00EE00} 
+  

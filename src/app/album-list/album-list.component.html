@@ -1,0 +1,13 @@
+<div class="table-container" >
+  <table class="table-style">
+    <tr>  
+      <td class="list-display">{{element.track|uppercase}}</td>
+      <td class="list-display">{{element.artist}}</td>
+      <button class="list-delete-button" (click)="removeElement()">X</button>
+     <button class="view-details-button"><a class="link" routerLink="/view-album-details/{{element.id}}" routerLinkActive="link-active" >View details</a></button>
+    </tr>
+
+  </table>
+  
+  
+</div>
