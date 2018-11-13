@@ -1,0 +1,20 @@
+.success-box{
+    background-color:greenyellow;
+    border:5px solid green;
+    width:55%;
+    position:absolute;
+    top: 175px;
+    left:250px;
+    padding:15px;
+    text-align: center;
+   
+    
+}
+.close-message{
+    background-color: brown;
+    border:2px solid black;
+    border-radius: 85px;
+    float: right;
+    padding: 5px;
+    color:white;
+}

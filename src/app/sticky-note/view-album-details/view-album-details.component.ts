@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DisplayService } from 'src/app/sticky-note/display.service';
 import { MusicAlbum } from 'src/app/music-album';
 import { ActivatedRoute } from '@angular/router';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-view-album-details',
@@ -11,9 +12,11 @@ import { ActivatedRoute } from '@angular/router';
 export class ViewAlbumDetailsComponent implements OnInit {
   public id:any;
   public detailedAlbum:MusicAlbum;
+  
   constructor(
     public displayService:DisplayService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router:Router
     ) {
        
    }
@@ -22,5 +25,7 @@ export class ViewAlbumDetailsComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get('id');
     this.detailedAlbum=this.displayService.returnRecord(this.id);
   }
-
+  public closeView(){
+    this.router.navigateByUrl('/view-records');
+  }
 }

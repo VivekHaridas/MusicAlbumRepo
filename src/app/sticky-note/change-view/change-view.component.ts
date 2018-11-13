@@ -24,6 +24,7 @@ export class ChangeViewComponent implements OnInit {
     for(let i=0;i<this.viewRecordList.length;i++){
       if((deletionId)==this.viewRecordList[i].id){
         this.viewRecordList.splice(i,1);
+        this.displayService.setCounter();
       }
     }    
   }

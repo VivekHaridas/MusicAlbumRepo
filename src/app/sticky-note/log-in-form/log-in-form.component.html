@@ -1,0 +1,18 @@
+<h1>Music Album-Your Gateway to exuberance</h1>
+<div class="container">
+  <h3>Please Login to Register your Album</h3>
+  <form #loginForms="ngForm">
+    <div class="form-group">
+      <label for="username">*User name:</label>
+      <input type="text" class="form-control" id="user-name" required [(ngModel)]="loginForm.userName" name="userName">
+    </div> 
+   
+    <div class="form-group">
+      <label for="password">*Password:</label>
+      <input type="password" class="form-control" id="password"required  [(ngModel)]="loginForm.password" name="password">
+    </div> 
+
+    <button type="button"  [disabled]=!loginForms.valid class="btn btn-success" (click)="routeToRegisterForm()">Submit</button>
+    <div class="error-message" *ngIf="errorMessageFlag">**Invalid username or password</div>
+  </form>
+</div>

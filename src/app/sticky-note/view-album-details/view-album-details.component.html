@@ -1,5 +1,5 @@
 <div class="view-container">
-  <button class="view-delete-button" ><a class="link" routerLink="/change-view" routerLinkActive="link-active" ><b>X</b></a></button>
+  <button class="view-delete-button"(click)="closeView()"><b>X</b></button>
   <h1 class="field-decoration">Track Details {{id}}</h1>
     
     <div class="field-decoration"><h3>Track Name : {{detailedAlbum.track|capitalize}}</h3></div>

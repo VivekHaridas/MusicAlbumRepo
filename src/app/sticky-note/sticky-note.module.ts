@@ -15,13 +15,15 @@ import { AlbumListComponent } from 'src/app/album-list/album-list.component';
 import { ViewAlbumDetailsComponent } from './view-album-details/view-album-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CapitalizePipe } from 'src/app/capitalize.pipe';
+import { LogInFormComponent } from './log-in-form/log-in-form.component';
+import { SuccessMessageComponent } from './success-message/success-message.component';
 
 const appNavigations : Routes = [
-  {path:"",component:AddNewNoteButtonComponent},
-  {path:"fork",component:ForkComponent},
-  {path:"change-view",component:ChangeViewComponent},
+  {path:"",component:LogInComponent},
+  {path:"register",component:ForkComponent},
+  {path:"view-records",component:ChangeViewComponent},
   {path:"log-in",component:LogInComponent},
-  {path:"sign-up",component:SignUpComponent},
+  {path:"sticky-note",component:AddNewNoteButtonComponent},
   {path:"view-album-details/:id",component:ViewAlbumDetailsComponent},
   
 ];
@@ -33,7 +35,7 @@ const appNavigations : Routes = [
     FormsModule,
 
   ],
-  declarations: [NoteComponent, StickBoardComponent,HeaderComponent, AddNewNoteButtonComponent, ForkComponent, ChangeViewComponent, LogInComponent, SignUpComponent, AlbumFormComponent,AlbumListComponent, ViewAlbumDetailsComponent,CapitalizePipe],
+  declarations: [NoteComponent, StickBoardComponent,HeaderComponent, AddNewNoteButtonComponent, ForkComponent, ChangeViewComponent, LogInComponent, SignUpComponent, AlbumFormComponent,AlbumListComponent, ViewAlbumDetailsComponent,CapitalizePipe, LogInFormComponent, SuccessMessageComponent],
   exports:[StickBoardComponent,
           NoteComponent,
           HeaderComponent,
